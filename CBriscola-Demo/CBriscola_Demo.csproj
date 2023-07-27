@@ -7,27 +7,12 @@
 
   
   <ItemGroup>
-    <EmbeddedResource Include="Assets\**" />
-  </ItemGroup>
-
-  
-  <ItemGroup>
-    <None Remove="Resources\Images\n0.png" />
+    <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
 
   
   <ItemGroup>
     <EmbeddedResource Include="Resources\Images\**" />
-  </ItemGroup>
-
-  
-  <ItemGroup>
-    <EmbeddedResource Remove="Assets\avalonia-logo.ico" />
-  </ItemGroup>
-
-  
-  <ItemGroup>
-    <AvaloniaResource Include="Assets\avalonia-logo.ico" />
   </ItemGroup>
 
   <ItemGroup>

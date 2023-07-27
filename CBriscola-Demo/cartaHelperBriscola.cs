@@ -41,7 +41,7 @@ namespace org.altervista.numerone.framework
 			return valore;
 		}
 		public string GetSemeStr(UInt16 Carta) {
-			string s = "a";
+			string s = "";
 			switch (Carta / 10) {
                 case 0: s = "bastoni"; break;
                 case 1: s = "coppe"; break;

@@ -11,7 +11,6 @@
 using Avalonia.Controls;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
-using CBriscola.Avalonia;
 using CBriscola_Demo;
 using System;
 using System.IO;
@@ -37,14 +36,14 @@ namespace org.altervista.numerone.framework
             valore = helper.GetValore(n);
             punteggio = helper.GetPunteggio(n);
         }
-        public static void Inizializza(Mazzo m, ushort n, CartaHelperBriscola h, IAssetLoader asset, ResourceDictionary d)
+        public static void Inizializza(Mazzo m, ushort n, CartaHelperBriscola h)
         {
             for (UInt16 i = 0; i < n; i++)
             {
                 carte[i] = new Carta(i, h);
 
             }
-            CaricaImmagini(m, n, h, asset, d);
+            CaricaImmagini(m, n, h);
         }
         public static Carta GetCarta(UInt16 quale) { return carte[quale]; }
         public UInt16 GetSeme() { return seme; }
@@ -75,14 +74,12 @@ namespace org.altervista.numerone.framework
             return img;
         }
 
-        public static void CaricaImmagini(Mazzo m, ushort n, CartaHelperBriscola helper, IAssetLoader assets, ResourceDictionary d)
+        public static void CaricaImmagini(Mazzo m, ushort n, CartaHelperBriscola helper)
         {
-            String s = "";
             for (UInt16 i = 0; i < n; i++)
             {
-                asset = assets.Open(new Uri($"avares://{Assembly.GetEntryAssembly().GetName().Name}/resources/images/" + i + ".png"));
-                carte[i].img = new Bitmap(asset);
-                carte[i].semeStr = helper.GetSemeStr(i, m.GetNome(), d);
+                carte[i].img = new Bitmap(AssetLoader.Open(new Uri($"resm:CBriscola_Demo.Resources.Images.n{i}.png")));
+                carte[i].semeStr = helper.GetSemeStr(i);
             }
         }
     }

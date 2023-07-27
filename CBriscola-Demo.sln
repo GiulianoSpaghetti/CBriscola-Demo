@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CBriscola-Demo", "CBriscola-Demo\CBriscola-Demo.csproj", "{4A47825F-69A0-41BF-B1D0-13865631FFAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CBriscola_Demo", "CBriscola-Demo\CBriscola_Demo.csproj", "{9386C81F-9ED9-4D23-851C-F8FE6EC06405}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CBriscola-Demo.Android", "CBriscola-Demo.Android\CBriscola-Demo.Android.csproj", "{9B3755C8-6294-4D2A-8346-3065C6788F1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CBriscola_Demo.Android", "CBriscola-Demo.Android\CBriscola_Demo.Android.csproj", "{C4A8594E-D677-41C9-B643-9AEB1E3B5677}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CBriscola-Demo.Desktop", "CBriscola-Demo.Desktop\CBriscola-Demo.Desktop.csproj", "{45CAF6CA-78DD-4FC1-9310-E74DCDCF6BA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CBriscola_Demo.Desktop", "CBriscola-Demo.Desktop\CBriscola_Demo.Desktop.csproj", "{0E777A3D-0309-40AC-AA3A-C757E9DE9C2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,25 +15,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4A47825F-69A0-41BF-B1D0-13865631FFAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A47825F-69A0-41BF-B1D0-13865631FFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A47825F-69A0-41BF-B1D0-13865631FFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A47825F-69A0-41BF-B1D0-13865631FFAE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B3755C8-6294-4D2A-8346-3065C6788F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B3755C8-6294-4D2A-8346-3065C6788F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B3755C8-6294-4D2A-8346-3065C6788F1D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{9B3755C8-6294-4D2A-8346-3065C6788F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B3755C8-6294-4D2A-8346-3065C6788F1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B3755C8-6294-4D2A-8346-3065C6788F1D}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{45CAF6CA-78DD-4FC1-9310-E74DCDCF6BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45CAF6CA-78DD-4FC1-9310-E74DCDCF6BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45CAF6CA-78DD-4FC1-9310-E74DCDCF6BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45CAF6CA-78DD-4FC1-9310-E74DCDCF6BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9386C81F-9ED9-4D23-851C-F8FE6EC06405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9386C81F-9ED9-4D23-851C-F8FE6EC06405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9386C81F-9ED9-4D23-851C-F8FE6EC06405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9386C81F-9ED9-4D23-851C-F8FE6EC06405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A8594E-D677-41C9-B643-9AEB1E3B5677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A8594E-D677-41C9-B643-9AEB1E3B5677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A8594E-D677-41C9-B643-9AEB1E3B5677}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C4A8594E-D677-41C9-B643-9AEB1E3B5677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A8594E-D677-41C9-B643-9AEB1E3B5677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A8594E-D677-41C9-B643-9AEB1E3B5677}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0E777A3D-0309-40AC-AA3A-C757E9DE9C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E777A3D-0309-40AC-AA3A-C757E9DE9C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E777A3D-0309-40AC-AA3A-C757E9DE9C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E777A3D-0309-40AC-AA3A-C757E9DE9C2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {39BD5C0B-BDD5-43D2-8C4F-AF3B75D8067C}
+		SolutionGuid = {3C5D5298-0A37-4566-9900-6B3C6B50096A}
 	EndGlobalSection
 EndGlobal
