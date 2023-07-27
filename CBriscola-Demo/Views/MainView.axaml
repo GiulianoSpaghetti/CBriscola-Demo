@@ -64,11 +64,11 @@
 				<RowDefinition />
 				<RowDefinition />
 			</Grid.RowDefinitions>
-			<Label Grid.Row="0">CBriscola Demo</Label>
-			<Label Grid.Row="1">ⓒ Giulio Sorrentino 2023</Label>
-			<Label Grid.Row="2">License: GPL v3 or, in your humble opinion, any later version</Label>
-			<Label Grid.Row="3">This trump wins because it scores more points not because it deals the cards, therefore also taking the 8s, 9s and 10s</Label>
-			<Button Click="OnSito_Click" Grid.Row="5">https://github.com/numerunix/CBriscola-Demo</Button>
+			<TextBlock Grid.Row="0" TextWrapping="Wrap">CBriscola Demo</TextBlock>
+			<TextBlock Grid.Row="1" TextWrapping="Wrap">ⓒ Giulio Sorrentino 2023</TextBlock>
+			<TextBlock Grid.Row="2" TextWrapping="Wrap">License: GPL v3 or, in your humble opinion, any later version</TextBlock>
+			<TextBlock Grid.Row="3" TextWrapping="Wrap">This trump wins because it scores more points not because it deals the cards, therefore also taking the 8s, 9s and 10s</TextBlock>
+			<Button Click="OnSito_Click" Grid.Row="5">More info</Button>
 			<Button x:Name="InfoApplicazione" Click="OnApp_Click" Grid.Row="6">Applicazione</Button>
 		</Grid>
 		<Grid x:Name="GOpzioni" IsVisible="False">
@@ -109,7 +109,7 @@
 				<ColumnDefinition />
 				<ColumnDefinition />
 			</Grid.ColumnDefinitions>
-			<Label x:Name="fpRisultrato" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
+			<TextBlock TextWrapping="Wrap" x:Name="fpRisultrato" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
 		</Grid>
 	</Grid>
 </UserControl>

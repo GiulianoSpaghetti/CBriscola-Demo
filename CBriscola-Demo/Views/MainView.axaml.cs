@@ -75,6 +75,7 @@ public partial class MainView : UserControl
 
     private void Gioca_Click(object sender, RoutedEventArgs e)
     {
+        lblInfo.Content = "";
         c = primo.GetCartaGiocata();
         c1 = secondo.GetCartaGiocata();
         if ((c.CompareTo(c1) > 0 && c.StessoSeme(c1)) || (c1.StessoSeme(briscola) && !c.StessoSeme(briscola)))
@@ -139,7 +140,7 @@ public partial class MainView : UserControl
                     s = "Hai perso";
                 s = $"{s} per {Math.Abs(g.GetPunteggio() - cpu.GetPunteggio())} punti";
             }
-            fpRisultrato.Content = $"La partita é finita. {s}. Siccome sono gratis escitene da solo...";
+            fpRisultrato.Text = $"La partita é finita. {s}. Siccome sono gratis escitene da solo...";
             Applicazione.IsVisible = false;
             FinePartita.IsVisible = true;
         }
@@ -311,7 +312,7 @@ public partial class MainView : UserControl
     {
         var psi = new ProcessStartInfo
         {
-            FileName = "https://github.com/numerunix/cbriscola.Avalonia",
+            FileName = "https://github.com/numerunix/cbriscola-demo",
             UseShellExecute = true
         };
         Process.Start(psi);
