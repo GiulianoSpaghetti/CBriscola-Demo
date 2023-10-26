@@ -8,5 +8,5 @@
         x:Class="CBriscola_Demo.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="CBriscola_Demo">
-        <views:MainView />
+	<views:MainView />
 </Window>

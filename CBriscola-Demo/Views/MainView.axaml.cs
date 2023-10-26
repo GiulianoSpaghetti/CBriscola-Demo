@@ -11,6 +11,7 @@ using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System;
+using Xamarin.Essentials;
 
 namespace CBriscola_Demo.Views;
 
@@ -59,17 +60,7 @@ public partial class MainView : UserControl
 
         NelMazzoRimangono.Content = $"Nel mazzo rimangono {m.GetNumeroCarte()} carte";
         CartaBriscola.Content = $"Il seme di briscola é: {briscola.GetSemeStr()}";
-        lbCartaBriscola.Content = "La carta che designa il seme di briscola può dar punti";
-        lbAvvisaTallone.Content = "Avvisa quando il tallone finisce";
-        opNomeUtente.Content = "Nome Utente: ";
-        opNomeCpu.Content = "Nome Cpu: ";
-        InfoApplicazione.Content = "Applicazione";
-        OpzioniApplicazione.Content = "Applicazione";
-        OpzioniInformazioni.Content = "Informazioni";
-        AppInformazioni.Content = "Informazioni";
-        AppOpzioni.Content = "Opzioni";
         Briscola.Source = briscola.GetImmagine();
-        btnGiocata.Content = $"Ho visto la giocata";
     }
 
 
@@ -140,7 +131,7 @@ public partial class MainView : UserControl
                     s = "Hai perso";
                 s = $"{s} per {Math.Abs(g.GetPunteggio() - cpu.GetPunteggio())} punti";
             }
-            fpRisultrato.Text = $"La partita é finita. {s}. Siccome sono gratis escitene da solo...";
+            fpRisultrato.Text = $"La partita é finita. {s}. Guarda che la versione completa costa solo poco, potresti anche offrirmela una colazione...";
             Applicazione.IsVisible = false;
             FinePartita.IsVisible = true;
         }
@@ -305,17 +296,14 @@ public partial class MainView : UserControl
             avvisaTalloneFinito = false;
         else
             avvisaTalloneFinito = true;
+        GOpzioni.IsVisible = false;
+        Applicazione.IsVisible = true;
     }
 
 
     private void OnSito_Click(object sender, RoutedEventArgs e)
     {
-        var psi = new ProcessStartInfo
-        {
-            FileName = "https://github.com/numerunix/cbriscola-demo",
-            UseShellExecute = true
-        };
-        Process.Start(psi);
+        Browser.OpenAsync("https://github.com/numerunix/cbriscola-demo");
     }
 }
 
