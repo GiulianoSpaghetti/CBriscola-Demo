@@ -17,21 +17,20 @@ namespace org.altervista.numerone.framework
 		private string nome;
 		private Carta[] mano;
 		private bool ordinaMano;
-		private UInt16 numeroCarte;
-		private UInt16 iCarta;
-		private UInt16 iCartaGiocata;
-		private UInt16 punteggio;
+		private UInt16 numeroCarte, iCarta, iCartaGiocata, punteggio;
+		private readonly UInt16 totaleCarte;
 		private readonly GiocatoreHelper helper;
 		public enum Carta_GIOCATA { NESSUNA_Carta_GIOCATA = UInt16.MaxValue };
 		public Giocatore(GiocatoreHelper h, string n, UInt16 carte, bool ordina = true)
 		{
+			totaleCarte = carte;
 			ordinaMano = ordina;
 			numeroCarte = carte;
 			iCartaGiocata = (UInt16)(Carta_GIOCATA.NESSUNA_Carta_GIOCATA);
 			punteggio = 0;
 			helper = h;
 			nome = n;
-			mano = new Carta[3];
+			mano = new Carta[totaleCarte];
 			iCarta = 0;
 		}
 		public string GetNome() { return nome; }
