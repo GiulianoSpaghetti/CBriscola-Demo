@@ -242,11 +242,5 @@ public partial class MainView : UserControl
         GOpzioni.IsVisible = false;
         Applicazione.IsVisible = true;
     }
-
-
-    private void OnSito_Click(object sender, RoutedEventArgs e)
-    {
-        Browser.OpenAsync("https://github.com/numerunix/cbriscola-demo");
-    }
 }
 
