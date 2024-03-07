@@ -181,66 +181,9 @@ public partial class MainView : UserControl
         cbCartaBriscola.IsChecked = briscolaDaPunti;
         cbAvvisaTallone.IsChecked = avvisaTalloneFinito;
     }
-
-    private void NuovaPartita()
-    {
-        bool primaUtente = primo == g;
-        bool cartaBriscola = true;
-        if (cbCartaBriscola.IsChecked == false)
-            cartaBriscola = false;
-        e = new ElaboratoreCarteBriscola(cartaBriscola);
-        m = new Mazzo(e);
-        briscola = Carta.GetCarta(ElaboratoreCarteBriscola.GetCartaBriscola());
-        g = new Giocatore(new GiocatoreHelperUtente(), g.GetNome(), 3);
-        helper = new GiocatoreHelperCpu(ElaboratoreCarteBriscola.GetCartaBriscola());
-        cpu = new Giocatore(helper, cpu.GetNome(), 3);
-        for (UInt16 i = 0; i < 3; i++)
-        {
-            g.AddCarta(m);
-            cpu.AddCarta(m);
-
-        }
-        Utente0.Source = g.GetImmagine(0);
-        Utente0.IsVisible = true;
-        Utente1.Source = g.GetImmagine(1);
-        Utente1.IsVisible = true;
-        Utente2.Source = g.GetImmagine(2);
-        Utente2.IsVisible = true;
-        Cpu0.Source = cartaCpu.Source;
-        Cpu0.IsVisible = true;
-        Cpu1.Source = cartaCpu.Source;
-        Cpu1.IsVisible = true;
-        Cpu2.Source = cartaCpu.Source;
-        Cpu2.IsVisible = true;
-        Giocata0.IsVisible = false;
-        Giocata1.IsVisible = false;
-        PuntiCpu.Content = $"Punti di {cpu.GetNome()}: {cpu.GetPunteggio()}";
-        PuntiUtente.Content = $"Punti di {g.GetNome()}: {g.GetPunteggio()}";
-        NelMazzoRimangono.Content = $"Nel mazzo rimangono {m.GetNumeroCarte()} carte";
-        CartaBriscola.Content = $"Il seme di briscola é: {briscola.GetSemeStr()}";
-        NelMazzoRimangono.IsVisible = true;
-        CartaBriscola.IsVisible = true;
-        Briscola.Source = briscola.GetImmagine();
-        Briscola.IsVisible = true;
-        primaUtente = !primaUtente;
-        if (primaUtente)
-        {
-            primo = g;
-            secondo = cpu;
-        }
-        else
-        {
-            primo = cpu;
-            secondo = g;
-            i1 = GiocaCpu();
-        }
-        Briscola.Source = briscola.GetImmagine();
-
-    }
     private void OnOkFp_Click(object sender, RoutedEventArgs evt)
     {
         FinePartita.IsVisible = false;
-        NuovaPartita();
         Applicazione.IsVisible = true;
 
     }
