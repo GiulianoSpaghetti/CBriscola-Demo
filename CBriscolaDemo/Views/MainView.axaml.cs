@@ -22,7 +22,7 @@ namespace CBriscolaDemo.Views
             this.InitializeComponent();
             e = new ElaboratoreCarteBriscola(false);
             m = new Mazzo(e);
-            Carta.Inizializza("", m, 40, new CartaHelperBriscola(ElaboratoreCarteBriscola.GetCartaBriscola()), "bastoni", "coppe", "denari", "spade", "fiori", "quadri", "cuori", "picche", "CBriscolaDemo");
+            Carta.Inizializza("", m, 40, new org.altervista.numerone.framework.briscola.CartaHelper(ElaboratoreCarteBriscola.GetCartaBriscola()), "bastoni", "coppe", "denari", "spade", "fiori", "quadri", "cuori", "picche", "CBriscolaDemo");
             cartaCpu.Source = new Bitmap(AssetLoader.Open(new Uri($"avares://CBriscolaDemo/Assets/retro_carte_pc.png")));
             g = new Giocatore(new GiocatoreHelperUtente(), "numerone", 3);
             helper = new GiocatoreHelperCpu2(ElaboratoreCarteBriscola.GetCartaBriscola());
