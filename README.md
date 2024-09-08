@@ -1,4 +1,4 @@
-:it: Made in Italy. La prima demo free softwaare di un prodotto free software.
+:it: Made in Italy. La prima demo free software di un prodotto free software.
 
 ## CBriscola-Demo
 La demo di Trump Game Suit in Avalonia
