@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>29.0</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ApplicationId>com.CompanyName.CBriscolaDemo</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AndroidUseAapt2>True</AndroidUseAapt2>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AndroidUseAapt2>True</AndroidUseAapt2>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AndroidResource Include="Icon.png">
+      <Link>Resources\drawable\Icon.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+
+
+	<ItemGroup>
+	  <PackageReference Include="Avalonia.Android" Version="11.2.4" />
+	  <PackageReference Include="Avalonia.BuildServices" Version="0.0.31" />
+	  <PackageReference Include="DynamicData" Version="9.1.1" />
+	  <PackageReference Include="HarfBuzzSharp" Version="8.3.0.1" />
+	  <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="8.3.0.1" />
+	  <PackageReference Include="HarfBuzzSharp.NativeAssets.WebAssembly" Version="8.3.0.1" />
+	  <PackageReference Include="ReactiveUI" Version="20.1.63" />
+	  <PackageReference Include="SkiaSharp" Version="3.116.1" />
+	  <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="3.116.1" />
+	  <PackageReference Include="SkiaSharp.NativeAssets.WebAssembly" Version="3.116.1" />
+	  <PackageReference Include="Splat" Version="15.3.1" />
+	  <PackageReference Include="Xamarin.AndroidX.Activity" Version="1.10.0" />
+	  <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.9.1.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Annotation.Experimental" Version="1.4.1.8" />
+	  <PackageReference Include="Xamarin.AndroidX.Annotation.Jvm" Version="1.9.1.2" />
+	  <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.7.0.5" />
+	  <PackageReference Include="Xamarin.AndroidX.Arch.Core.Common" Version="2.2.0.15" />
+	  <PackageReference Include="Xamarin.AndroidX.Arch.Core.Runtime" Version="2.2.0.15" />
+	  <PackageReference Include="Xamarin.AndroidX.Collection" Version="1.4.5.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Collection.Jvm" Version="1.4.5.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Concurrent.Futures" Version="1.2.0.5" />
+	  <PackageReference Include="Xamarin.AndroidX.Core" Version="1.15.0.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.15.0.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.14" />
+	  <PackageReference Include="Xamarin.AndroidX.CursorAdapter" Version="1.0.0.31" />
+	  <PackageReference Include="Xamarin.AndroidX.CustomView" Version="1.1.0.30" />
+	  <PackageReference Include="Xamarin.AndroidX.DrawerLayout" Version="1.2.0.15" />
+	  <PackageReference Include="Xamarin.AndroidX.Emoji2" Version="1.5.0.3" />
+	  <PackageReference Include="Xamarin.AndroidX.Emoji2.ViewsHelper" Version="1.5.0.3" />
+	  <PackageReference Include="Xamarin.AndroidX.Fragment" Version="1.8.5.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Interpolator" Version="1.0.0.31" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.8.7.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common.Jvm" Version="2.8.7.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core" Version="2.8.7.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.8.7.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.8.7.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime.Android" Version="2.8.7.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel" Version="2.8.7.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Android" Version="2.8.7.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModelSavedState" Version="2.8.7.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Loader" Version="1.1.0.31" />
+	  <PackageReference Include="Xamarin.AndroidX.ProfileInstaller.ProfileInstaller" Version="1.4.1.2" />
+	  <PackageReference Include="Xamarin.AndroidX.ResourceInspection.Annotation" Version="1.0.1.19" />
+	  <PackageReference Include="Xamarin.AndroidX.Startup.StartupRuntime" Version="1.2.0.2" />
+	  <PackageReference Include="Xamarin.AndroidX.Tracing.Tracing" Version="1.2.0.9" />
+	  <PackageReference Include="Xamarin.AndroidX.VectorDrawable" Version="1.2.0.5" />
+	  <PackageReference Include="Xamarin.AndroidX.VectorDrawable.Animated" Version="1.2.0.5" />
+	  <PackageReference Include="Xamarin.AndroidX.VersionedParcelable" Version="1.2.0.9" />
+	  <PackageReference Include="Xamarin.AndroidX.ViewPager" Version="1.1.0.1" />
+	  <PackageReference Include="Xamarin.Google.Guava.ListenableFuture" Version="1.0.0.26" />
+	  <PackageReference Include="Xamarin.Jetbrains.Annotations" Version="26.0.1.2" />
+	  <PackageReference Include="Xamarin.Kotlin.StdLib" Version="2.0.21.2" />
+	  <PackageReference Include="Xamarin.KotlinX.AtomicFU" Version="0.26.1.1" />
+	  <PackageReference Include="Xamarin.KotlinX.AtomicFU.Jvm" Version="0.26.1.1" />
+	  <PackageReference Include="Xamarin.KotlinX.Coroutines.Android" Version="1.9.0.2" />
+	  <PackageReference Include="Xamarin.KotlinX.Coroutines.Core" Version="1.9.0.2" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CBriscolaDemo\CBriscolaDemo.csproj" />
+  </ItemGroup>
+</Project>

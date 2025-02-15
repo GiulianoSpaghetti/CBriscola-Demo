@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.2.4" />
+    <PackageReference Include="avalonia.controls.datagrid" Version="11.2.4" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.2.4" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.2.4" />    
+    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.2.4" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="11.2.4" />
+    <PackageReference Include="CardFramework.avalonia" Version="1.4.7" />
+    <PackageReference Include="DynamicData" Version="9.1.1" />
+    <PackageReference Include="ReactiveUI" Version="20.1.63" />
+    <PackageReference Include="Splat" Version="15.3.1" />
+  </ItemGroup>
+</Project>
