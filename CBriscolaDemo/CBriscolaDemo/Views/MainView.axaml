@@ -27,6 +27,7 @@
 	<Grid>
 		<Grid x:Name="Applicazione">
 			<Grid.RowDefinitions>
+				<RowDefinition Height="20" />
 				<RowDefinition />
 				<RowDefinition />
 				<RowDefinition />
@@ -40,51 +41,52 @@
 				<ColumnDefinition />
 				<ColumnDefinition Width="auto" />
 			</Grid.ColumnDefinitions>
-			<Label x:Name="NomeUtente" Classes="main" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">Nome Utente</Label>
-			<Button x:Name="Btn0" Grid.Row="1" Grid.Column="0" Click="Image_Tapped">
+			<Label x:Name="NomeUtente" Classes="main" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">Nome Utente</Label>
+			<Button x:Name="Btn0" Grid.Row="2" Grid.Column="0" Click="Image_Tapped">
 				<Image x:Name="Utente0"/>
 			</Button>
-			<Button x:Name="Btn1" Grid.Row="1" Grid.Column="1" Click="Image_Tapped">
+			<Button x:Name="Btn1" Grid.Row="2" Grid.Column="1" Click="Image_Tapped">
 				<Image x:Name="Utente1"/>
 			</Button>
-			<Button x:Name="Btn2" Grid.Row="1" Grid.Column="2" Click="Image_Tapped">
+			<Button x:Name="Btn2" Grid.Row="2" Grid.Column="2" Click="Image_Tapped">
 				<Image x:Name="Utente2"/>
 			</Button>
-			<Image x:Name="Giocata0" Grid.Row="2" Grid.Column="0" />
-			<Image x:Name="Giocata1" Grid.Row="2" Grid.Column="1" />
-			<Image x:Name="Cpu0" Grid.Row="3" Grid.Column="0" />
-			<Image x:Name="Cpu1" Grid.Row="3" Grid.Column="1" />
-			<Image x:Name="Cpu2" Grid.Row="3" Grid.Column="2" />
-			<Label x:Name="NomeCpu" Classes="main" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3">Nome Cpu</Label>
-			<Label x:Name="PuntiUtente" Classes="main" Grid.Row="0" Grid.Column="4">Punti dell'utente</Label>
-			<Label x:Name="PuntiCpu" Classes="main" Grid.Row="1" Grid.Column="4">Punti della Cpu</Label>
-			<Label x:Name="NelMazzoRimangono" Classes="main" Grid.Row="2" Grid.Column="4">Nel Mazzo Rimangono</Label>
-			<Label x:Name="CartaBriscola" Classes="main" Grid.Row="3" Grid.Column="4">Il seme di briscola è</Label>
-			<Image x:Name="Briscola" Grid.Row="4" Grid.Column="4" />
-			<Button x:Name="AppInformazioni" Classes="main" Grid.Row="5" Grid.Column="0" Click="OnInfo_Click">
+			<Image x:Name="Giocata0" Grid.Row="3" Grid.Column="0" />
+			<Image x:Name="Giocata1" Grid.Row="3" Grid.Column="1" />
+			<Image x:Name="Cpu0" Grid.Row="4" Grid.Column="0" />
+			<Image x:Name="Cpu1" Grid.Row="4" Grid.Column="1" />
+			<Image x:Name="Cpu2" Grid.Row="4" Grid.Column="2" />
+			<Label x:Name="NomeCpu" Classes="main" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3">Nome Cpu</Label>
+			<Label x:Name="PuntiUtente" Classes="main" Grid.Row="1" Grid.Column="4">Punti dell'utente</Label>
+			<Label x:Name="PuntiCpu" Classes="main" Grid.Row="2" Grid.Column="4">Punti della Cpu</Label>
+			<Label x:Name="NelMazzoRimangono" Classes="main" Grid.Row="3" Grid.Column="4">Nel Mazzo Rimangono</Label>
+			<Label x:Name="CartaBriscola" Classes="main" Grid.Row="4" Grid.Column="4">Il seme di briscola è</Label>
+			<Image x:Name="Briscola" Grid.Row="5" Grid.Column="4" />
+			<Button x:Name="AppInformazioni" Classes="main" Grid.Row="6" Grid.Column="0" Click="OnInfo_Click">
 				<TextBlock Classes="main">Informazioni</TextBlock>
 			</Button>
-			<Button x:Name="AppOpzioni" Classes="main" Grid.Row="5" Grid.Column="1" Click="OnOpzioni_Click">
+			<Button x:Name="AppOpzioni" Classes="main" Grid.Row="6" Grid.Column="1" Click="OnOpzioni_Click">
 				<TextBlock Classes="main">Opzioni</TextBlock>
 			</Button>
-			<Button x:Name="btnGiocata" Classes="main" Grid.Row="5" Grid.Column="2" IsVisible="false" Click="Gioca_Click">
+			<Button x:Name="btnGiocata" Classes="main" Grid.Row="6" Grid.Column="2" IsVisible="false" Click="Gioca_Click">
 				<TextBlock Classes="main">Ho visto la giocata</TextBlock>
 			</Button>
-			<Label x:Name="lblInfo" Classes="main" Grid.Row="5" Grid.Column="3" />
+			<Label x:Name="lblInfo" Classes="main" Grid.Row="6" Grid.Column="3" />
 		</Grid>
 		<Grid x:Name="Info" IsVisible="False">
 			<Grid.RowDefinitions>
+				<RowDefinition Height="20" />
 				<RowDefinition />
 				<RowDefinition />
 				<RowDefinition />
 				<RowDefinition />
 				<RowDefinition />
 			</Grid.RowDefinitions>
-			<TextBlock Grid.Row="0" Classes="main">CBriscola Demo</TextBlock>
-			<TextBlock Grid.Row="1" Classes="main">ⓒ Giulio Sorrentino 2023-2024</TextBlock>
-			<TextBlock Grid.Row="2" Classes="main">License: GPL v3 or, in your humble opinion, any later version</TextBlock>
-			<TextBlock Grid.Row="3" Classes="main">This trump wins because it scores more points not because it deals the cards, therefore also taking the 8s, 9s and 10s</TextBlock>
-			<Button x:Name="InfoApplicazione" Classes="main" Click="OnApp_Click" Grid.Row="6">Applicazione</Button>
+			<TextBlock Grid.Row="1" Classes="main">CBriscola Demo</TextBlock>
+			<TextBlock Grid.Row="2" Classes="main">ⓒ Giulio Sorrentino 2023-2024</TextBlock>
+			<TextBlock Grid.Row="3" Classes="main">License: GPL v3 or, in your humble opinion, any later version</TextBlock>
+			<TextBlock Grid.Row="4" Classes="main">This trump wins because it scores more points not because it deals the cards, therefore also taking the 8s, 9s and 10s</TextBlock>
+			<Button x:Name="InfoApplicazione" Classes="main" Click="OnApp_Click" Grid.Row="7">Applicazione</Button>
 		</Grid>
 		<Grid x:Name="GOpzioni" IsVisible="False">
 			<Grid.ColumnDefinitions>
@@ -92,6 +94,7 @@
 				<ColumnDefinition />
 			</Grid.ColumnDefinitions>
 			<Grid.RowDefinitions>
+				<RowDefinition Height="20" />
 				<RowDefinition />
 				<RowDefinition />
 				<RowDefinition />
@@ -102,24 +105,25 @@
 				<RowDefinition />
 				<RowDefinition />
 			</Grid.RowDefinitions>
-			<Label x:Name="opNomeUtente" Classes="main" Grid.Row="0" Grid.Column="0">Nome Utente: </Label>
-			<TextBox x:Name="txtNomeUtente" Grid.Row="0" Grid.Column="1" IsEnabled="false" />
-			<Label x:Name="opNomeCpu" Classes="main" Grid.Row="1" Grid.Column="0">Nome Cpu: </Label>
-			<TextBox x:Name="txtCpu" Grid.Row="1" Grid.Column="1" IsEnabled="false"/>
-			<ToggleSwitch x:Name="tsCartaBriscola" Grid.Row="3" Grid.Column="1" IsChecked="True" />
-			<TextBlock TextWrapping="Wrap" x:Name="lbCartaBriscola" Classes="main" Grid.Row="3" Grid.Column="0"  Grid.ColumnSpan="2">La carta che designa il seme di briscola può dar punti</TextBlock>
-			<ToggleSwitch x:Name="tsAvvisaTallone" Grid.Row="4" Grid.Column="1" IsChecked="True" />
-			<Label x:Name="lbAvvisaTallone" Classes="main" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">Avvisa quando il tallone finisce</Label>
-			<Button Click="OnOk_Click" Classes="main"  Grid.Row="7" Grid.Column="1">OK</Button>
-			<Button x:Name="OpzioniApplicazione" Classes="main" Click="OnApp_Click" Grid.Row="8" Grid.Column="0">
+			<Label x:Name="opNomeUtente" Classes="main" Grid.Row="1" Grid.Column="0">Nome Utente: </Label>
+			<TextBox x:Name="txtNomeUtente" Grid.Row="1" Grid.Column="1" IsEnabled="false" />
+			<Label x:Name="opNomeCpu" Classes="main" Grid.Row="2" Grid.Column="0">Nome Cpu: </Label>
+			<TextBox x:Name="txtCpu" Grid.Row="1" Grid.Column="2" IsEnabled="false"/>
+			<ToggleSwitch x:Name="tsCartaBriscola" Grid.Row="4" Grid.Column="1" IsChecked="True" />
+			<TextBlock TextWrapping="Wrap" x:Name="lbCartaBriscola" Classes="main" Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="2">La carta che designa il seme di briscola può dar punti</TextBlock>
+			<ToggleSwitch x:Name="tsAvvisaTallone" Grid.Row="5" Grid.Column="1" IsChecked="True" />
+			<Label x:Name="lbAvvisaTallone" Classes="main" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2">Avvisa quando il tallone finisce</Label>
+			<Button Click="OnOk_Click" Classes="main"  Grid.Row="8" Grid.Column="1">OK</Button>
+			<Button x:Name="OpzioniApplicazione" Classes="main" Click="OnApp_Click" Grid.Row="9" Grid.Column="0">
 				<TextBlock Classes="main">Applicazione</TextBlock>
 			</Button>
-			<Button x:Name="OpzioniInformazioni" Classes="main" Grid.Row="8" Grid.Column="1" Click="OnInfo_Click">
+			<Button x:Name="OpzioniInformazioni" Classes="main" Grid.Row="9" Grid.Column="1" Click="OnInfo_Click">
 				<TextBlock Classes="main">Informazioni</TextBlock>
 			</Button>
 		</Grid>
 		<Grid x:Name="FinePartita" IsVisible="False">
 			<Grid.RowDefinitions>
+				<RowDefinition Height="20" />
 				<RowDefinition />
 				<RowDefinition />
 			</Grid.RowDefinitions>
@@ -128,7 +132,7 @@
 				<ColumnDefinition />
 				<ColumnDefinition />
 			</Grid.ColumnDefinitions>
-			<TextBlock Classes="main" x:Name="fpRisultrato" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
+			<TextBlock Classes="main" x:Name="fpRisultrato" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />
 		</Grid>
 	</Grid>
 </UserControl>

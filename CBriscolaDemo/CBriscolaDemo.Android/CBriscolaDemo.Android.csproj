@@ -4,9 +4,9 @@
     <TargetFramework>net9.0-android</TargetFramework>
     <SupportedOSPlatformVersion>29.0</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
-    <ApplicationId>com.CompanyName.CBriscolaDemo</ApplicationId>
-    <ApplicationVersion>1</ApplicationVersion>
-    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationId>org.altervista.numerone.CBriscolaDemo</ApplicationId>
+    <ApplicationVersion>41</ApplicationVersion>
+    <ApplicationDisplayVersion>1.4</ApplicationDisplayVersion>
     <AndroidPackageFormat>apk</AndroidPackageFormat>
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
   </PropertyGroup>
