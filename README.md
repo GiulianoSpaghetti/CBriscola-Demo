@@ -4,6 +4,10 @@
 La demo di Trump Game Suit in Avalonia
 
 
+## Come giocare tramite web
+
+http://numeronesoft.ddns.net:8080/apps/cbriscolademo/
+
 ## Come installare
 
 ## Su Android
