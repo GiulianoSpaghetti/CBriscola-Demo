@@ -20,6 +20,11 @@ https://photos.google.com/share/AF1QipPcHpm_dwRMQJn-BJX74QqBt3NdZSCnVkXLrjx0dwVg
 
 E' disponibile nel wrapper google play games for pc.
 
+## Bug Conosciuti
+
+Dal momento che nell'ultimo avalonia le immagini non possono essere cliccate ma i bottoni si ed i bottoni possono fungere da contenitori per le immagini, è presente un bug che dice che se si è nelle ultime due mani e si clicca un bottone vuoto, la giocata viene gestita.
+Essendo una demo gratuita non rientra nelle mie proprità riparlarlo, per cui non cliccate sui bottoni senza immagini.
+
 ## Donazioni
 
 http://numerone.altervista.org/donazioni.php
